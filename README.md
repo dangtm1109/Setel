@@ -45,7 +45,12 @@
 # Prerequisite
     - Docker
 # Run
-    - docker-compose up
+    Docker commands for running the app: 
+    - docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build -d
+    - docker-compose up -d
+        +order-web front end (port 3001)
+        +order-api (port 3002) 
+        +payment-api (port 3003) 
 =======
 ##This is structure of project:
 Setel
