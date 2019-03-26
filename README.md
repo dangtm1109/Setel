@@ -8,7 +8,7 @@
                     |
                     |
                  MongoDB
-<<<<<<< Updated upstream
+                 
 ## This is structure of project:
     Setel
     ├── docker-compose.override.yml
@@ -79,6 +79,3 @@ Setel
         ├── tslint.json
         ├── webpack.config.js
         └── webpack.config.prod.js
-
-
->>>>>>> Stashed changes
