@@ -1,0 +1,48 @@
+version: '3.4'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: "mongodb"
+    networks:
+      - setel-network
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+        - data-db:/data/db
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
+
+  order-web:
+    image: ${DOCKER_REGISTRY}orderweb
+    networks:
+      - setel-network
+    build:
+      context: src/order-frontend
+      dockerfile: Dockerfile
+
+  order-api:
+    image: ${DOCKER_REGISTRY}orderapi
+    networks:
+      - setel-network
+    build:
+      context: src/order-application
+      dockerfile: Dockerfile
+  
+  payment-api:
+    image: ${DOCKER_REGISTRY}paymentapi
+    networks:
+      - setel-network
+    build:
+      context: src/payment-application
+      dockerfile: Dockerfile    
+
+networks:
+  setel-network:
+  
+volumes:
+  data-db:
+    
+    
+    
+
