@@ -1,0 +1,12 @@
+{
+  "db": {
+    "host": "mongodb",
+    "port": 27017,
+    "url": "",
+    "database": "setel",
+    "password": "",
+    "name": "db",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
