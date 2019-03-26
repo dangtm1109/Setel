@@ -15,7 +15,10 @@
   "author": "dangtm",
   "license": "ISC",
   "dependencies": {
+    "@types/mocha": "^5.2.6",
     "express": "^4.16.4",
+    "mocha": "^6.0.2",
+    "supertest": "^4.0.2",
     "webpack-watch-server": "^1.2.1"
   },
   "devDependencies": {
