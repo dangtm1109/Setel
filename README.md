@@ -1,4 +1,4 @@
-# In this project, we’ll build a NodeJS microservice and deploy it using a Docker Swarm Cluster.
+# In this project, we’ll build a NodeJS microservice and deploy it using a Docker.
 # The tools we're going to use:
     NodeJS version 10.15.3
     MongoDB 4.0.6
